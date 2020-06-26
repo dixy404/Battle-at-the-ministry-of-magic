@@ -1,2 +1,2 @@
-# Battle-at-the-ministry-of-magic
+# Battle of the Department of Mysteries
 Responsive Harry Potter Game in JavaScript
