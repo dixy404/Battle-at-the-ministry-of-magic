@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: HarryP;
+  src: url("HARRYP__.TTF");
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background: url("./assets/Department_of_Mysteries.jpg") center center
+    no-repeat;
+  background-color: black;
+  font-family: HarryP !important;
+}
+
+.score {
+  color: rgb(236, 236, 236);
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.score h2 {
+  font-size: 30px;
+}
+
+.score p {
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.intro {
+  color: rgb(236, 236, 236);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+  font-size: 55px;
+}
+
+.description {
+  font-size: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.answerYes {
+  margin-bottom: 10px;
+}
+
+.intro button,
+.duel button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: rgb(236, 236, 236);
+  font-size: 35px;
+  font-family: HarryP !important;
+  background-color: rgb(16, 61, 112);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intro button a {
+  text-decoration: none;
+  color: rgb(236, 236, 236);
+}
+
+.duel button {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.duel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease 0.5s;
+}
+
+.winner {
+  color: rgb(236, 236, 236);
+  text-align: center;
+  font-size: 50px;
+}
+
+.opponent {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.opponent,
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}

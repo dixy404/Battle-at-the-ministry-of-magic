@@ -3,11 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <title>Battle of the Department of Mysteries</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <section class="game">
+      <div class="score">
+        <div class="your-score">
+          <h2>You</h2>
+          <p>0</p>
+        </div>
+        <div class="de-score">
+          <h2>Death Eater</h2>
+          <p>0</p>
+        </div>
+      </div>
+
+      <div class="intro">
+        <h1>Battle of the Department of Mysteries</h1>
+        <p class="description">
+          Lord Voldemort has lured Harry Potter to the Department of Mysteries
+          inside the British Ministry of Magic in London in an effort to obtain
+          the prophecy concerning his futuristic defeat at Potter's hands. Young
+          wizard is fighting bravely at least a dozen Death Eaters. In order to
+          win he needs your help. Will you help him?
+        </p>
+        <button class="answerYes">Yes</button>
+        <button class="answerNo">
+          <a href="https://www.google.com/">No</a>
+        </button>
+      </div>
+
+      <div class="duel fadeOut">
+        <h2 class="winner">Choose a spell</h2>
+        <div class="opponent">
+          <img
+            class="player-hand"
+            src="./assets/Bellatrix_Lestrange.png"
+            alt="Bellatrix Lestrange"
+          />
+        </div>
+
+        <div class="options">
+          <button class="stupefy">stupefy</button>
+          <!--  <button class="duro">duro</button> -->
+          <button class="depulso">depulso</button>
+          <button class="confringo">confringo</button>
+          <button class="rictusempra">rictusempra</button>
+        </div>
+      </div>
+    </section>
+
+    <!--  <div class="imggg">
+      <img src="./assets/Bellatrix_Lestrange.png" alt="" />
+    </div> -->
+
     <script src="script.js"></script>
   </body>
 </html>
