@@ -81,9 +81,20 @@ html {
   color: rgb(236, 236, 236);
 }
 
+.intro button a:hover {
+  color: rgb(16, 61, 112);
+}
+
 .duel button {
   margin-left: 8px;
   margin-right: 8px;
+}
+
+.intro button:hover,
+.duel button:hover {
+  border: 3px solid rgb(16, 61, 112);
+  background-color: rgb(236, 236, 236);
+  color: rgb(16, 61, 112);
 }
 
 .duel {

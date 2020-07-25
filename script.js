@@ -20,6 +20,21 @@ const game = () => {
     });
   };
 
+  // Opponent Image
+  const opponentImg = () => {
+    const deImage = document.querySelector("#opponentImg");
+
+    // Show random Image
+    const imageArray = [
+      "assets/Bellatrix_Lestrange.png",
+      "assets/Death_Eater.png",
+      "assets/Lord_Voldemort.png",
+    ];
+
+    const randomImage = Math.floor(Math.random() * imageArray.length);
+    deImage.src = imageArray[randomImage];
+  };
+
   // Play Match
   const playMatch = () => {
     const options = document.querySelectorAll(".options button");
@@ -118,6 +133,7 @@ const game = () => {
 
   // call all inner functions
   startGame();
+  opponentImg();
   playMatch();
 };
 
