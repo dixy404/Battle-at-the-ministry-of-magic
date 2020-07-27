@@ -1,6 +1,6 @@
 # Battle of the Department of Mysteries
 
-Responsive Harry Potter Game in JavaScript
+Harry Potter Game in JavaScript
 
 # Demo
 
