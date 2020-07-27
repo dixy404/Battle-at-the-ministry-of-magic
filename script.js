@@ -1,9 +1,3 @@
-//Spells: stupefy, depulso, confringo, rictusempra
-//Stupefy: charm that renders a victim unconscious and halts moving objects
-//Depulso: Pushes an object away with a powerful blast
-//Confringo: Causes fireballs to shoot out from the user's wand
-//Rictusempra: Also known as the tickling charm, Rictusempra causes the opponent to buckle over laughing.
-
 const game = () => {
   let pScore = 0;
   let cScore = 0;
@@ -18,6 +12,30 @@ const game = () => {
       introScreen.classList.add("fadeOut");
       match.classList.add("fadeIn");
     });
+  };
+
+  //Help Modal
+  const helpModal = () => {
+    const modal = document.querySelector("#helpModal");
+    const btn = document.querySelector("#modalBtn");
+    const span = document.querySelector(".close");
+
+    //Open modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    //Close modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    //Close modal when clicked anywhere outside it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
   };
 
   // Opponent Image
@@ -133,6 +151,7 @@ const game = () => {
 
   // call all inner functions
   startGame();
+  helpModal();
   opponentImg();
   playMatch();
 };

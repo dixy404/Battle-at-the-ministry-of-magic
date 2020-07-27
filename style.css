@@ -38,7 +38,7 @@ html {
 
 .intro {
   color: rgb(236, 236, 236);
-  height: 50vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,6 +60,10 @@ html {
 
 .answerYes {
   margin-bottom: 10px;
+}
+
+#modalBtn {
+  margin-top: 10px;
 }
 
 .intro button,
@@ -131,4 +135,44 @@ div.fadeOut {
 div.fadeIn {
   opacity: 1;
   pointer-events: all;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: rgb(16, 61, 112);
+  color: rgb(236, 236, 236);
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  width: 80%;
+}
+
+.close {
+  color: rgb(236, 236, 236);
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
 }
