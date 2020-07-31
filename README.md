@@ -4,4 +4,4 @@ Harry Potter Game in JavaScript
 
 # Demo
 
-https://dazzling-darwin-8343e0.netlify.app/index.html
+https://dazzling-darwin-8343e0.netlify.app 
