@@ -149,11 +149,27 @@ const game = () => {
     }
   };
 
+  // Game Over message
+  const gameOver = () => {
+    const alertW = document.querySelector("#alert-winner");
+    const alertL = document.querySelector("#alert-loser");
+
+    //When the score is 10 show message
+    addEventListener("click", function () {
+      if (pScore === 10) {
+        alertW.style.display = "block";
+      } else if (cScore === 10) {
+        alertL.style.display = "block";
+      }
+    });
+  };
+
   // call all inner functions
   startGame();
   helpModal();
   opponentImg();
   playMatch();
+  gameOver();
 };
 
 // start the game function
